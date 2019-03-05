@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
+import {Input, Button} from 'semantic-ui-react';
 import axios from 'axios';
 
 const Effect = () => {
   const [characters, setCharacters] = useState([]);
   const [counter, setCounter] = useState(0);
   const [search, setSearch] = useState('');
-  
+
   const clickHandler = () => console.warn('useEffect EvenListener\n\tClick');
   const fetchCharacters = async () => {
     const {
@@ -35,11 +36,11 @@ const Effect = () => {
   return (
     <div>
       <h1>useEffect</h1>
-      <h2>Counter</h2>
-      <button onClick={() => setCounter(counter + 1)}>{counter} Clicks</button>
-      <h2>Search</h2>
-      <input type="text" onChange={e => setSearch(e.target.value)} value={search} />
-      <h2>Characters</h2>
+      <h3>Counter</h3>
+      <Button onClick={() => setCounter(counter + 1)}>{counter} Clicks</Button>
+      <h3>Search</h3>
+      <Input type="text" onChange={e => setSearch(e.target.value)} value={search} placeholder="Search" />
+      <h3>Characters</h3>
       <ul>
         {characters.map(person => (
           <li key={person.name}>{person.name}</li>
