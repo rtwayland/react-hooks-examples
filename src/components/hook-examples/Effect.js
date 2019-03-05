@@ -21,11 +21,11 @@ const Effect = () => {
   }, []);
   /* Runs on every update */
   useEffect(() => {
-    console.error('useEffect\n\tUpdate');
+    console.log('useEffect\n\tUpdate');
   });
   /* Runs only when search is updated */
   useEffect(() => {
-    console.log('useEffect\n\tUpdating Search');
+    console.error('useEffect\n\tUpdating Search');
   }, [search]);
   /* Return a function that will be called upon component unmount */
   useEffect(() => {
