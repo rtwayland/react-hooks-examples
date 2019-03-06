@@ -7,7 +7,7 @@ const Hook = () => {
   const {user, pass, setUser, setPass} = context;
   return (
     <div style={{marginTop: 20}}>
-      <h2>useContext</h2>
+      <h2>Hook</h2>
       <Form>
         <Form.Field>
           <label>Username</label>

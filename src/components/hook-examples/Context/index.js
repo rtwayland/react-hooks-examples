@@ -6,7 +6,7 @@ import Provider from './context';
 const Context = () => (
   <Provider>
     <div>
-      <h1>Context</h1>
+      <h1>useContext</h1>
       <Original />
       <Hook />
     </div>
