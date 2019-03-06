@@ -1,5 +1,6 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Nav from './Nav';
 import SideNav from './SideNav';
 import State from './hook-examples/State';
 import Ref from './hook-examples/Ref';
@@ -16,21 +17,21 @@ const App = () => {
   return (
     <Router>
       <div>
-        <nav>
-          <Link to="/"> Home</Link>
-        </nav>
-        <Route exact path="/" component={SideNav} />
-        <Route path="/state" component={State} />
-        <Route path="/ref" component={Ref} />
-        <Route path="/reducer" component={Reducer} />
-        <Route path="/memo" component={Memo} />
-        <Route path="/layout-effect" component={LayoutEffect} />
-        <Route path="/imperative-handle" component={ImperitiveHandle} />
-        <Route path="/effect" component={Effect} />
-        <Route path="/debug-value" component={Debug} />
-        <Route path="/custom" component={Custom} />
-        <Route path="/context" component={Context} />
-        <Route path="/callback" component={Callback} />
+        <Nav />
+        <div style={{padding: 20}}>
+          <Route exact path="/" component={SideNav} />
+          <Route path="/state" component={State} />
+          <Route path="/ref" component={Ref} />
+          <Route path="/reducer" component={Reducer} />
+          <Route path="/memo" component={Memo} />
+          <Route path="/layout-effect" component={LayoutEffect} />
+          <Route path="/imperative-handle" component={ImperitiveHandle} />
+          <Route path="/effect" component={Effect} />
+          <Route path="/debug-value" component={Debug} />
+          <Route path="/custom" component={Custom} />
+          <Route path="/context" component={Context} />
+          <Route path="/callback" component={Callback} />
+        </div>
       </div>
     </Router>
   );
