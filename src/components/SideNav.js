@@ -11,6 +11,9 @@ const SideNav = () => (
       <Link to="/effect">useEffect</Link>
     </List.Item>
     <List.Item>
+      <Link to="/layout-effect">useLayoutEffect</Link>
+    </List.Item>
+    <List.Item>
       <Link to="/context">useContext</Link>
     </List.Item>
     <List.Item>
@@ -27,9 +30,6 @@ const SideNav = () => (
     </List.Item>
     <List.Item>
       <Link to="/imperative-handle">useImperativeHandle</Link>
-    </List.Item>
-    <List.Item>
-      <Link to="/layout-effect">useLayoutEffect</Link>
     </List.Item>
     <List.Item>
       <Link to="/debug-value">useDebugValue</Link>
