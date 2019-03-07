@@ -26,14 +26,18 @@ const SideNav = () => (
       <Link to="/memo">useMemo</Link>
     </List.Item>
     <List.Item>
-      <Link to="/ref">useRef</Link>
+      {/* <Link to="/ref">useRef</Link> */}
+      useRef
     </List.Item>
     <List.Item>
-      <Link to="/imperative-handle">useImperativeHandle</Link>
+      {/* <Link to="/imperative-handle">useImperativeHandle</Link> */}
+      useImperativeHandle
     </List.Item>
     <List.Item>
-      <Link to="/debug-value">useDebugValue</Link>
+      {/* <Link to="/debug-value">useDebugValue</Link> */}
+      useDebugValue
     </List.Item>
+    <List.Item>Custom Hooks</List.Item>
   </List>
 );
 
